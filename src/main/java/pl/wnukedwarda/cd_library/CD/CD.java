@@ -11,7 +11,6 @@ import java.util.stream.Collectors;
 
 public class CD {
 
-    private UUID uuid;
     private String title;
     private String artist;
     private int releaseYear;
@@ -19,6 +18,44 @@ public class CD {
     private List<Track> tracks;
     private boolean original;
     private int discCount;
+
+    public CD(String title, String artist, int releaseYear, String producer, List<Track> tracks, boolean original, int discCount) {
+        this.title = title;
+        this.artist = artist;
+        this.releaseYear = releaseYear;
+        this.producer = producer;
+        this.tracks = tracks;
+        this.original = original;
+        this.discCount = discCount;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getArtist() {
+        return artist;
+    }
+
+    public int getReleaseYear() {
+        return releaseYear;
+    }
+
+    public String getProducer() {
+        return producer;
+    }
+
+    public List<Track> getTracks() {
+        return tracks;
+    }
+
+    public boolean isOriginal() {
+        return original;
+    }
+
+    public int getDiscCount() {
+        return discCount;
+    }
 
     public int getTotalTime() {
         if (tracks != null) {
@@ -33,7 +70,6 @@ public class CD {
     @Override
     public String toString() {
         String result = "Title: " + title +
-                ", UUID: " + uuid +
                 ", artist: " + artist +
                 ", release year: " + releaseYear +
                 ", producer: " + producer +
