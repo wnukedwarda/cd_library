@@ -1,4 +1,4 @@
-package pl.wnukedwarda.cd_library.Track;
+package pl.wnukedwarda.cd_library.track;
 
 import pl.wnukedwarda.cd_library.Genre;
 import pl.wnukedwarda.cd_library.TimeUtil;

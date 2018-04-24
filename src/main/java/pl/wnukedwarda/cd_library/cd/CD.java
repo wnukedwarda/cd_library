@@ -1,12 +1,11 @@
-package pl.wnukedwarda.cd_library.CD;
+package pl.wnukedwarda.cd_library.cd;
 
 import pl.wnukedwarda.cd_library.Genre;
 import pl.wnukedwarda.cd_library.TimeUtil;
-import pl.wnukedwarda.cd_library.Track.Track;
+import pl.wnukedwarda.cd_library.track.Track;
 
 import java.util.List;
 import java.util.Set;
-import java.util.UUID;
 import java.util.stream.Collectors;
 
 public class CD {
@@ -76,7 +75,7 @@ public class CD {
                 ", total time: " + TimeUtil.intTimeToString(getTotalTime());
         //TODO ", genre: " + genre.getDescription() + "\n";
         if (original) {
-            result += "CD is original\n";
+            result += "cd is original\n";
         }
         result += "disc count: " + discCount +
                 "\nTracks:\n";

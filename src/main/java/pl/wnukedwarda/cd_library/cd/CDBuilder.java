@@ -1,10 +1,9 @@
-package pl.wnukedwarda.cd_library.CD;
+package pl.wnukedwarda.cd_library.cd;
 
-import pl.wnukedwarda.cd_library.Track.Track;
+import pl.wnukedwarda.cd_library.track.Track;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
 
 public class CDBuilder {
 
